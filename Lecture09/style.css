@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.resume{
+    display: flex;
+    margin: 50px;
+    position: relative;
+}
+
+.rightResume{
+    background-color: #022421;
+    color: white;
+    /* position: relative; */
+}
+.leftResume .name{
+    background-color: #045D55;
+    color: white;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    border-radius: 150px 0px 0px 150px;
+}
+.leftResume .name h1{
+    font-size: 70px;
+}
+.leftResume .name h4{
+    font-size: 40px;
+    font-weight: 400;
+}
+hr{
+    width: 35%;
+    height: 1px;
+    background-color: white;
+    margin: 15px 0px;
+}
+.leftResume img{
+    border-radius: 50%;
+    padding: 0px 50px;
+
+}
