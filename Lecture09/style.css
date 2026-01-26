@@ -6,12 +6,49 @@
     display: flex;
     margin: 50px;
     position: relative;
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 10px;
 }
 
 .rightResume{
     background-color: #022421;
     color: white;
     /* position: relative; */
+    padding-top: 400px;
+    width: 30%;
+}
+.rightResume div{
+    width: 80%;
+    /* padding: 20px 30px; */
+    line-height: 20px;
+}
+.rightResume p{
+    padding: 0px 30px;
+    line-height: 25px;
+}
+.contact h2{
+    margin-bottom: 10px;
+}
+
+.rightResume h2{
+    background-color:#045D55;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.rightResume h5{
+    padding: 10px 30px;
+    font-size: 18px;
+}
+ 
+.leftResume{
+   padding-top: 400px;
+   background-color: rgb(222, 222, 222);   
+   width: 100%;
+   padding-bottom: 30px;
+   
 }
 .leftResume .name{
     background-color: #045D55;
@@ -30,6 +67,7 @@
 .leftResume .name h4{
     font-size: 40px;
     font-weight: 400;
+    /* font-size: 30px; */
 }
 hr{
     width: 35%;
@@ -42,3 +80,43 @@ hr{
     padding: 0px 50px;
 
 }
+.leftResume h2{
+    background-color: #022421;
+    color: white;
+    padding: 20px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    /* width: 30%; */
+}
+.leftResume h4, ul>li, p{
+    padding: 0px 30px;
+}
+.leftResume ul>li{
+    list-style:inside;
+}
+.leftResume h4{
+    font-size: 20px;
+}
+.leftResume p{
+    font-weight: bold;
+}
+.leftResume .work>h2{
+    width: 30%;
+    border-radius: 0px 40px 40px 0px
+}
+.leftResume .skills h2{
+width: 15%;
+border-radius: 0px 40px 40px 0px
+}
+.skillsBoxes{
+    display: flex;
+}
+.box{
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+}
+/* .box .box1 {
+  width: 
+} */
