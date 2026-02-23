@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(93, 93, 93);
+    color: white;
+    height: 100vh;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 10px;
+    height: 50vh;
+    box-sizing: border-box;
+}
+.btn{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+header h1{
+    font-size: 50px;
+    margin-top: 150px;
+}
+.between{
+    font-size: 20px;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0px;
+    box-sizing: border-box;
+}
+.guess{
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+}
+.message{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.scoreLabel{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.highestScoreLabel{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+hr{
+    height: 3px;
+    background-color: white;
+    
+}
+.secretNumber{
+   height: 60px;
+   width: 100px;
+   background-color: white;
+   color: black;
+   position: absolute;
+   left: 50%;
+   top: 42%;
+   transform: translate(-50%, 50%);
+   font-size: 45px;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
