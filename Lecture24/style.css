@@ -80,3 +80,14 @@ hr{
    align-items: center;
    justify-content: center;
 }
+.container{
+    height: 300px;
+    width: 300px;
+    text-align:center;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    font-size: 20px;
+    margin: 400px;
+    padding: 40px;
+}
