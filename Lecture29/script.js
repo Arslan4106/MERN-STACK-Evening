@@ -11,9 +11,37 @@ const restaurant = {
     "Burgers",
     "Vegetables Rice",
   ],
-  order: function (starterIndex, mainIndex) {},
+  openingHours: {
+    thur: {
+      open: 7,
+      close: 6,
+    },
+    fri: {
+      open: 8,
+      close: 7,
+    },
+    sat: {
+      open: 9,
+      close: 10,
+    },
+  },
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+  orderDelivery: function ({ time, address, mainIndex, starterIndex }) {
+    // console.log(obj);
+    // console.log(time, address, mainIndex, starterIndex);
+    console.log(
+      `Order Recevied! The order of ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`,
+    );
+  },
 };
-
+restaurant.orderDelivery({
+  time: "9:00pm",
+  address: "Brains College Walton Road Lahore",
+  mainIndex: 2,
+  starterIndex: 2,
+});
 // Destructuring of Arrays
 const arr = [2, 3, 4];
 const a = arr[0];
@@ -38,3 +66,46 @@ const nested = [2, 3, [5, 6]];
 // console.log(nested);
 const [p, , [q, r]] = nested;
 console.log(p, q, r);
+
+console.log(restaurant.order(2, 0));
+const [firstItem, secondItem] = restaurant.order(2, 0);
+console.log(firstItem, secondItem);
+
+// Default Values
+const newArray = [3, 7, 9];
+const [m = 1, n = 1, o = 1] = newArray;
+console.log(m, n, o);
+
+// Geeks for Geeks
+// Leetcode
+// Hacker Rank
+
+// Domain Name: Unique Name of a website
+
+// User       Google       Server (Hosting)
+// Destructuring Of Objects
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+// console.log(name, openingHours, categories);
+console.log(restaurantName, hours, tags);
+
+// Default Values
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
+
+// Mutating Variables
+let f = 111;
+let g = 999;
+console.log(f, g);
+let obj = { f: 3, g: 9, h: 8 };
+({ f, g } = obj);
+console.log(f, g);
+
+// Nested Objects
+const {
+  thur: { open: op, close: cl },
+} = restaurant.openingHours;
+console.log(op, cl);
