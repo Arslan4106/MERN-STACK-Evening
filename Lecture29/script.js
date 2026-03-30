@@ -109,3 +109,39 @@ const {
   thur: { open: op, close: cl },
 } = restaurant.openingHours;
 console.log(op, cl);
+//  The Spread Operator
+const newArrayy = [8, 9, 10, 11];
+const goodArray = [
+  1,
+  2,
+  3,
+  4,
+  newArrayy[0],
+  newArrayy[1],
+  newArrayy[2],
+  newArrayy[3],
+];
+console.log(goodArray);
+const newGoodArray = [1, 2, 3, 4, 5, 6, 7, ...newArrayy];
+console.log(newGoodArray);
+console.log(...restaurant.categories);
+// Clone the Array
+const copyArray = [
+  "Fish",
+  "Chicken Sajji",
+  ...restaurant.mainMenu,
+  "Mutton Karahi",
+];
+// The Spread operator with strings
+console.log(copyArray);
+const firstName = "Jonas";
+console.log(...firstName);
+
+// Merge different Arrays
+const MainMenu = [
+  ...restaurant.categories,
+  ...restaurant.starterMenu,
+  ...restaurant.mainMenu,
+];
+
+console.log(MainMenu);
