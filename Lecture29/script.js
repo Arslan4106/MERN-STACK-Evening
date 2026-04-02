@@ -138,10 +138,24 @@ const firstName = "Jonas";
 console.log(...firstName);
 
 // Merge different Arrays
-const MainMenu = [
+const mainMenu = [
   ...restaurant.categories,
   ...restaurant.starterMenu,
   ...restaurant.mainMenu,
 ];
+console.log(mainMenu);
+// The Rest Pattern Method
+const ar = [1, 2, 3, 4, 5, 6, 7, 8];
+const [ab, , bd, ...others] = ar;
+console.log(ab, bd, others);
+// Arrays
+const [desi, , organic, ...otherFood] = [
+  ...restaurant.categories,
+  ...restaurant.starterMenu,
+  ...restaurant.mainMenu,
+];
+console.log(desi, organic, otherFood);
 
-console.log(MainMenu);
+// Objects
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(sat, weekdays);
