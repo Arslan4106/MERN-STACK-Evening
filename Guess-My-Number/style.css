@@ -41,7 +41,7 @@ input{
     font-size: 20px;
     width: 160px;
     text-align: center;
-    border: none;
+    border: 2px solid white;
 }
 .content .message{
     font-size: 30px;
@@ -70,3 +70,6 @@ input{
     top: 41%;
     transform: translate(-50%, 50%);
 }
+
+
+
