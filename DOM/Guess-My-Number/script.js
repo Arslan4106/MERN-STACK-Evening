@@ -7,25 +7,50 @@ document.querySelector(".guess").addEventListener("click", function () {
   // console.log("You have Clicked on Check Button");
   let guess = document.querySelector(".numbers").value;
   // console.log(guess);
+
   if (!guess) {
-    score--; // score = score - 1;
-    document.querySelector(".message").textContent = "No Number 😡";
-    document.querySelector("body").style.backgroundColor = "darkred";
-    document.querySelector(".score").textContent = score;
+    if (score > 1) {
+      score--; // score = score - 1;
+      document.querySelector(".message").textContent = "No Number 😡";
+      document.querySelector("body").style.backgroundColor = "darkred";
+      document.querySelector(".score").textContent = score;
+    } else {
+      document.querySelector(".message").textContent =
+        "You Have Lost the Game 😭";
+      document.querySelector(".score").textContent = 0;
+    }
   } else if (guess > secretNumber) {
-    score--;
-    document.querySelector(".message").textContent = "Too High 📈";
-    document.querySelector(".score").textContent = score;
+    if (score > 1) {
+      score--;
+      document.querySelector(".message").textContent = "Too High 📈";
+      document.querySelector(".score").textContent = score;
+    } else {
+      document.querySelector(".message").textContent =
+        "You Have Lost the Game 😭";
+      document.querySelector(".score").textContent = 0;
+      document.querySelector("body").style.backgroundColor = "darkred";
+    }
   } else if (guess < secretNumber) {
-    score--;
-    document.querySelector(".message").textContent = "Too Low 📉";
-    document.querySelector(".score").textContent = score;
+    if (score > 1) {
+      score--;
+      document.querySelector(".message").textContent = "Too Low 📉";
+      document.querySelector(".score").textContent = score;
+    } else {
+      document.querySelector(".message").textContent =
+        "You Have Lost the Game 😭";
+      document.querySelector(".score").textContent = 0;
+      document.querySelector("body").style.backgroundColor = "darkred";
+    }
   } else if (guess == secretNumber) {
     document.querySelector(".message").textContent = "👉 Correct Number";
     document.querySelector("body").style.backgroundColor = "green";
+    document.querySelector(".secretNumber").textContent = secretNumber;
   }
 });
 
+document.querySelector(".again").addEventListener("click", function () {
+  document.querySelector("body").style.backgroundColor = "rgb(44, 44, 44)";
+});
 // Type of SEO:
 // White Hat SEO:
 // Black Hat SEO
