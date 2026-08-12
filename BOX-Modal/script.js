@@ -1,0 +1,10 @@
+let btn = document.querySelectorAll(".btn");
+console.log(btn);
+console.log(btn.length);
+console.log(btn[0]);
+console.log(btn[1]);
+console.log(btn[2]);
+let modal = document.querySelector(".modal").textContent;
+console.log(modal);
+let closeModal = document.querySelector(".closeModal").textContent;
+console.log(closeModal);
