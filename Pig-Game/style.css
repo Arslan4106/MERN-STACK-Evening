@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    background-color: orange;
+    height: 450px;
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 30%);
+    justify-content: space-around;
+}
+.player{
+    padding-top: 100px;
+}
+.player h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.player p{
+    text-align: center;
+}
+.player>p{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.current{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    text-transform: uppercase;
+}
+.current p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.player--active{
+    background-color: rgb(187, 123, 4);
+}
+.player--0{
+    width: 50%;
+    text-align: center;
+}
+.player--1{
+    width: 50%;
+    text-align: center;
+}
+.btn{
+    position: absolute;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    /* font-weight: bold; */
+
+}
+.dice{
+    position: absolute;
+    top: 40%;
+}
+.start-Game{
+    top: 50px;
+}
+.rolldice{
+    top: 350px;
+}
+.hold{
+    top: 400px;
+}
+.hidden{
+    display: none;
+}
