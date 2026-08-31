@@ -15,6 +15,20 @@ const restaurant = {
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
+  openingHours: {
+    thur: {
+      open: 8,
+      close: 9,
+    },
+    fri: {
+      open: 9,
+      close: 6,
+    },
+    satr: {
+      open: 10,
+      close: 10,
+    },
+  },
 };
 
 // Destrucuring of Arrays
@@ -41,3 +55,11 @@ console.log(main, secondary);
 console.log(restaurant.order(2, 0));
 const [first, second] = restaurant.order(2, 0);
 console.log(first, second);
+
+// Nested Destructure of Arrays
+const nested = [2, 4, 6, [7, 9, 10]];
+const [p, q, r, [s, t, u]] = nested;
+console.log(p, q, r, s, t, u);
+
+const [k = 1, l = 1, m = 1, n = 1] = [12, 20, 45];
+console.log(k, l, m, n);
