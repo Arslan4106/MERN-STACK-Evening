@@ -24,7 +24,7 @@ const restaurant = {
       open: 9,
       close: 6,
     },
-    satr: {
+    sat: {
       open: 10,
       close: 10,
     },
@@ -63,3 +63,31 @@ console.log(p, q, r, s, t, u);
 
 const [k = 1, l = 1, m = 1, n = 1] = [12, 20, 45];
 console.log(k, l, m, n);
+
+// Destructuring of Objects
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+// console.log(name, openingHours, categories);
+console.log(restaurantName, hours, tags);
+
+const { thur, fri, sat } = restaurant.openingHours;
+console.log(thur, fri, sat);
+const { open: o, close: cl } = restaurant.openingHours.fri;
+console.log(o, cl);
+
+// Off-Page SEO:
+// Website link to otherWebsites
+// Mozbar
+// DA: Domain Authrity (1 to 100)
+// PA: Page Authority (1 to 100)
+// Spam Score: (0% to 100%)
+
+// Filter:
+// DA: 90+
+// PA: 80+
+// SS: 0% to 10%
+
+// Types of Backlinks
