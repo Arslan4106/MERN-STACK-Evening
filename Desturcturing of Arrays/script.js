@@ -29,8 +29,29 @@ const restaurant = {
       close: 10,
     },
   },
+  orderDelivery: function ({
+    time = "10:00pm",
+    address = "Johar Town",
+    starterIndex = 2,
+    mainIndex = 2,
+  }) {
+    // return obj;
+    // console.log(obj);
+    // console.log(obj.time);
+    // console.log(
+    //   `Order Received! The order of ${this.starterMenu[obj["starterIndex"]]} and ${this.mainMenu[obj["mainIndex"]]} will be delivered to ${obj["address"]} at ${obj["time"]}`,
+    // );
+    return `Order Received! The order of ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`;
+  },
 };
-
+console.log(
+  restaurant.orderDelivery({
+    // time: "9:00pm",
+    // address: "Walton Road, Lahore",
+    starterIndex: 3,
+    mainIndex: 1,
+  }),
+);
 // Destrucuring of Arrays
 const arr = [2, 3, 7];
 const a = arr[0];
